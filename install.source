@@ -1,0 +1,23 @@
+# list of general apps to install
+export APPGTM='git zsh tmux'
+
+# aliases
+alias zshconfig="vim ~/.zshrc"
+#alias ohmyzsh="vim ~/.oh-my-zsh"
+alias cdp="cd ~/Projects"
+alias cdg="cd ~/git"
+alias lsa="ls -lah"
+alias clr='clear;echo "Currently logged in on $(tty), as $USER in directory $PWD."'
+alias mkdir='mkdir -pv'
+
+# get top process eating memory
+alias psmem='ps -e -orss=,args= | sort -b -k1,1n'
+alias psmem10='ps -e -orss=,args= | sort -b -k1,1n| head -10'
+
+# get top process eating cpu if not work try excute : export LC_ALL='C'
+alias pscpu='ps -e -o pcpu,cpu,nice,state,cputime,args|sort -k1 -nr'
+alias pscpu10='ps -e -o pcpu,cpu,nice,state,cputime,args|sort -k1 -nr | head -10'
+
+# top10 of the history
+alias hist10='print -l ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
+
