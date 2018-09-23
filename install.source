@@ -1,5 +1,5 @@
 # list of general apps to install
-export APPGTM='git zsh tmux'
+export APPGTM='zsh tmux'
 
 # aliases
 alias zshconfig="vim ~/.zshrc"
